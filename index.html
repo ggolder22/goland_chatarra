@@ -50,7 +50,7 @@
   .process-grid{grid-template-columns:repeat(6,1fr);}
   .highlight-grid{grid-template-columns:1fr 1fr;}
   .materials-grid{grid-template-columns:repeat(5,1fr);}
-  .benefits-grid{grid-template-columns:1.3fr 1fr;}
+  .benefits-grid{grid-template-columns:0.9fr 1.3fr 1fr;}
   .reports-grid{grid-template-columns:repeat(3,1fr);}
   .contact-grid{grid-template-columns:1fr 1fr;}
   .nav-wrap{display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:18px 8vw;background:var(--brand-dark);position:sticky;top:0;z-index:20;border-bottom:1px solid var(--border-dark);}
@@ -111,23 +111,8 @@
           <a href="#contacto" class="btn btn-outline">Cotizar ahora</a>
         </div>
       </div>
-      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:28px;">
-        <svg viewBox="0 0 340 220" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0" y="150" width="340" height="70" fill="#0f1811"/>
-          <polygon points="20,150 120,150 130,90 260,90 260,150" fill="#3a5d43"/>
-          <polygon points="130,95 150,95 145,150 130,150" fill="#8bc53f" opacity="0.5"/>
-          <polygon points="160,95 180,95 175,150 160,150" fill="#8bc53f" opacity="0.35"/>
-          <polygon points="190,100 220,95 235,150 200,150" fill="#8bc53f" opacity="0.6"/>
-          <rect x="20" y="150" width="55" height="4" fill="#0f1811"/>
-          <circle cx="55" cy="185" r="24" fill="#0f1811" stroke="#8bc53f" stroke-width="3"/>
-          <circle cx="55" cy="185" r="10" fill="#141f18"/>
-          <circle cx="220" cy="185" r="24" fill="#0f1811" stroke="#8bc53f" stroke-width="3"/>
-          <circle cx="220" cy="185" r="10" fill="#141f18"/>
-          <rect x="60" y="118" width="90" height="35" rx="2" fill="#e9ede3"/>
-          <rect x="60" y="118" width="90" height="10" fill="#8bc53f"/>
-          <path d="M95 130 a10 10 0 1 0 0.1 0" fill="none" stroke="#1f3a2a" stroke-width="2"/>
-          <path d="M100 125 l6 5 -6 5 M90 125 l-6 5 6 5" stroke="#1f3a2a" stroke-width="1.6" fill="none"/>
-        </svg>
+      <div style="border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,0.12);">
+        <img src="images/hero_truck.jpg" alt="Camión de Goland S.R.L. retirando chatarra metálica" style="display:block;width:100%;height:100%;object-fit:cover;"/>
       </div>
     </div>
 
@@ -171,37 +156,43 @@
 
     <div class="grid process-grid" style="gap:16px;margin-top:48px;">
       <div class="stack" style="gap:12px;align-items:flex-start;">
-        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <div style="width:100%;aspect-ratio:4/3;border-radius:6px;overflow:hidden;"><img src="images/proc_worker.jpg" alt="Evaluación técnica en planta" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>
+        <div class="icon-circle" style="width:38px;height:38px;min-width:38px;margin-top:-32px;margin-left:6px;border:2px solid var(--bg);"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         <div style="font-family:'Oswald',sans-serif;font-size:12px;color:var(--accent-deep);font-weight:600;">01</div>
         <h4 style="font-size:15px;">Evaluación</h4>
         <p style="color:var(--ink-soft);font-size:13.5px;line-height:1.5;">Analizamos tus necesidades y el tipo de material.</p>
       </div>
       <div class="stack" style="gap:12px;align-items:flex-start;">
-        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="13" height="10"/><path d="M14 10h4l4 4v2h-8z"/><circle cx="5.5" cy="18" r="1.7"/><circle cx="18" cy="18" r="1.7"/></svg></div>
+        <div style="width:100%;aspect-ratio:4/3;border-radius:6px;overflow:hidden;"><img src="images/proc_truck.jpg" alt="Camión retirando chatarra" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>
+        <div class="icon-circle" style="width:38px;height:38px;min-width:38px;margin-top:-32px;margin-left:6px;border:2px solid var(--bg);"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><rect x="1" y="6" width="13" height="10"/><path d="M14 10h4l4 4v2h-8z"/><circle cx="5.5" cy="18" r="1.7"/><circle cx="18" cy="18" r="1.7"/></svg></div>
         <div style="font-family:'Oswald',sans-serif;font-size:12px;color:var(--accent-deep);font-weight:600;">02</div>
         <h4 style="font-size:15px;">Retiro y transporte</h4>
         <p style="color:var(--ink-soft);font-size:13.5px;line-height:1.5;">Retiramos la chatarra con logística propia y segura.</p>
       </div>
       <div class="stack" style="gap:12px;align-items:flex-start;">
-        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div style="width:100%;aspect-ratio:4/3;border-radius:6px;overflow:hidden;"><img src="images/proc_pile_claw.jpg" alt="Grúa clasificando chatarra metálica" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>
+        <div class="icon-circle" style="width:38px;height:38px;min-width:38px;margin-top:-32px;margin-left:6px;border:2px solid var(--bg);"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg></div>
         <div style="font-family:'Oswald',sans-serif;font-size:12px;color:var(--accent-deep);font-weight:600;">03</div>
         <h4 style="font-size:15px;">Clasificación</h4>
         <p style="color:var(--ink-soft);font-size:13.5px;line-height:1.5;">Clasificamos y separamos los materiales.</p>
       </div>
       <div class="stack" style="gap:12px;align-items:flex-start;">
-        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3l4 4-4 4M3 7h13a4 4 0 0 1 4 4v1"/><path d="M17 21l-4-4 4-4M21 17H8a4 4 0 0 1-4-4v-1"/></svg></div>
+        <div style="width:100%;aspect-ratio:4/3;border-radius:6px;overflow:hidden;"><img src="images/proc_conveyor.jpg" alt="Planta de reciclaje con cinta transportadora" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>
+        <div class="icon-circle" style="width:38px;height:38px;min-width:38px;margin-top:-32px;margin-left:6px;border:2px solid var(--bg);"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><path d="M7 3l4 4-4 4M3 7h13a4 4 0 0 1 4 4v1"/><path d="M17 21l-4-4 4-4M21 17H8a4 4 0 0 1-4-4v-1"/></svg></div>
         <div style="font-family:'Oswald',sans-serif;font-size:12px;color:var(--accent-deep);font-weight:600;">04</div>
         <h4 style="font-size:15px;">Reciclaje</h4>
         <p style="color:var(--ink-soft);font-size:13.5px;line-height:1.5;">Enviamos los materiales a plantas habilitadas para su reciclaje.</p>
       </div>
       <div class="stack" style="gap:12px;align-items:flex-start;">
-        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8"/></svg></div>
+        <div style="width:100%;aspect-ratio:4/3;border-radius:6px;overflow:hidden;"><img src="images/proc_certificate.jpg" alt="Certificado de disposición final" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>
+        <div class="icon-circle" style="width:38px;height:38px;min-width:38px;margin-top:-32px;margin-left:6px;border:2px solid var(--bg);"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><path d="M9 12l2 2 4-4"/><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8"/></svg></div>
         <div style="font-family:'Oswald',sans-serif;font-size:12px;color:var(--accent-deep);font-weight:600;">05</div>
         <h4 style="font-size:15px;">Certificación</h4>
         <p style="color:var(--ink-soft);font-size:13.5px;line-height:1.5;">Emitimos certificado de disposición final y trazabilidad.</p>
       </div>
       <div class="stack" style="gap:12px;align-items:flex-start;">
-        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-3 8-6.5 8-12a8 8 0 1 0-16 0c0 5.5 4 9 8 12z"/></svg></div>
+        <div style="width:100%;aspect-ratio:4/3;border-radius:6px;overflow:hidden;"><img src="images/proc_plant_hands.jpg" alt="Manos sosteniendo un brote, economía circular" style="width:100%;height:100%;object-fit:cover;display:block;"/></div>
+        <div class="icon-circle" style="width:38px;height:38px;min-width:38px;margin-top:-32px;margin-left:6px;border:2px solid var(--bg);"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><path d="M12 22c4-3 8-6.5 8-12a8 8 0 1 0-16 0c0 5.5 4 9 8 12z"/></svg></div>
         <div style="font-family:'Oswald',sans-serif;font-size:12px;color:var(--accent-deep);font-weight:600;">06</div>
         <h4 style="font-size:15px;">Impacto positivo</h4>
         <p style="color:var(--ink-soft);font-size:13.5px;line-height:1.5;">Contribuimos a la economía circular y a la reducción de CO2.</p>
@@ -266,6 +257,9 @@
     </div>
 
     <div class="grid benefits-grid" style="gap:24px;margin-top:56px;align-items:stretch;">
+      <div style="border-radius:6px;overflow:hidden;min-height:220px;">
+        <img src="images/materials_pile.jpg" alt="Pila de chatarra metálica acopiada en planta" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+      </div>
       <div class="card" style="background:var(--surface);">
         <h3 style="font-size:19px;">Beneficios para tu empresa</h3>
         <div class="stack" style="gap:14px;margin-top:20px;">
@@ -308,9 +302,16 @@
 
   <!-- REPORTES / IMPACTO -->
   <div class="section" style="background:var(--brand-dark);">
-    <div class="eyebrow" style="color:var(--accent);">Sostenibilidad medible</div>
-    <h2 style="font-size:32px;margin-top:10px;color:#fff;">Reportá. Reducí. <span style="color:var(--accent);">Impactá.</span></h2>
-    <p style="color:#a9b3a4;font-size:16px;margin-top:12px;max-width:62ch;">Entregamos la documentación oficial que necesitás para incluir la reducción de CO2 en tus reportes de sostenibilidad y gestión ambiental.</p>
+    <div class="grid hero-grid" style="gap:40px;align-items:center;">
+      <div>
+        <div class="eyebrow" style="color:var(--accent);">Sostenibilidad medible</div>
+        <h2 style="font-size:32px;margin-top:10px;color:#fff;">Reportá. Reducí. <span style="color:var(--accent);">Impactá.</span></h2>
+        <p style="color:#a9b3a4;font-size:16px;margin-top:12px;max-width:62ch;">Entregamos la documentación oficial que necesitás para incluir la reducción de CO2 en tus reportes de sostenibilidad y gestión ambiental.</p>
+      </div>
+      <div style="border-radius:8px;overflow:hidden;border:1px solid var(--border-dark);">
+        <img src="images/report_clipboard.jpg" alt="Reporte ambiental con datos de reducción de CO2" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+      </div>
+    </div>
 
     <div class="grid reports-grid" style="gap:24px;margin-top:44px;">
       <div class="stack" style="gap:14px;background:rgba(255,255,255,0.04);border:1px solid var(--border-dark);border-radius:6px;padding:26px;">
